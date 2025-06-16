@@ -1,0 +1,50 @@
+footer {
+  background-color: $gray;
+  color: white;
+  padding: 22px 25px 22px 25px;
+  font-family: $fontFamily;
+
+
+
+  p {
+    margin: 15PX;
+    font-size: 18px;
+  }
+
+  .fa-xs {
+    margin: 7px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+
+    @include respond(desktop) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 25px;
+    }
+
+  }
+
+  li {
+    margin: 5px;
+  }
+
+  h5 {
+    font-family: shrikhand, cursive;
+    font-weight: lighter;
+    font-size: 24px;
+    margin-bottom: 8px;
+    margin-top: 0;
+
+    @include respond(desktop) {
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      top: 40px;
+
+    }
+  }
+}

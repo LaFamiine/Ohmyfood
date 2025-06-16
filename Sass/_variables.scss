@@ -1,0 +1,17 @@
+$gray3: rgba(246, 246, 246, 1);
+$gray2: rgba(234, 234, 234, 1);
+$gray: rgba(53, 53, 53, 1);
+$black: black;
+$red: red;
+$fontFamily: 'Roboto', sans-serif;
+$white: #fff;
+$breakpoints: (
+  mobile: 375px,
+  desktop: 1024px,
+);
+@mixin respond($device) {
+    @media (min-width: map-get($breakpoints, $device)) {
+      @content;
+    }
+  }
+  
