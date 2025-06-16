@@ -111,7 +111,7 @@ input {
 .steps h2 {
   display: flex;
   justify-content: space-around;
-  width: 38%;
+  width: 48%;
   font-size: 24px;
   margin-bottom: 8px;
 }
@@ -137,7 +137,7 @@ input {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 @media (min-width: 1024px) {
-  .steps .steps-dekstop {
+  .steps_dekstop {
     gap: 45px;
     display: flex;
     flex-direction: row;
@@ -188,7 +188,7 @@ input {
   display: block;
   border-radius: 15px 15px 0 0;
 }
-.restaurants .dish .card {
+.restaurants .dish_card {
   position: relative;
   width: 100%;
   background: white;
@@ -197,8 +197,8 @@ input {
   margin-bottom: 20px;
 }
 @media (min-width: 1024px) {
-  .restaurants .dish .card {
-    flex: 32%;
+  .restaurants .dish_card {
+    flex: 33%;
   }
 }
 .restaurants .dish .content {
