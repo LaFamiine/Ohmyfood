@@ -47,6 +47,12 @@ header {
   font-family: "Roboto", sans-serif;
 }
 
+.illustration img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
 .header_location {
   display: flex;
   align-items: center;

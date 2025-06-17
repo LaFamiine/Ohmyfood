@@ -3,3 +3,8 @@ header {
   font-family: $fontFamily;
 
 }
+
+.illustration img{
+  object-fit: cover;
+width: 100%;
+}
