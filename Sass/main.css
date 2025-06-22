@@ -218,4 +218,10 @@ input {
   font-weight: 600;
   padding: 4px 10px;
   font-size: 14px;
+}
+
+.illustration img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
