@@ -111,15 +111,6 @@ input {
 .steps {
   font-family: "Roboto", sans-serif;
   padding: 32px 22px;
-  display: flex;
-  flex-direction: column;
-}
-.steps h2 {
-  display: flex;
-  justify-content: space-around;
-  width: 48%;
-  font-size: 24px;
-  margin-bottom: 8px;
 }
 .steps_number {
   position: relative;
@@ -143,11 +134,14 @@ input {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 @media (min-width: 1024px) {
-  .steps_dekstop {
-    gap: 45px;
+  .steps li {
+    width: 33%;
+  }
+}
+@media (min-width: 1024px) {
+  .steps .steps-desktop {
+    gap: 20px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
   }
 }
 
@@ -159,9 +153,9 @@ input {
 }
 @media (min-width: 1024px) {
   .restaurants .dish {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 28px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
     padding-top: 20px;
   }
 }
@@ -194,7 +188,7 @@ input {
   display: block;
   border-radius: 15px 15px 0 0;
 }
-.restaurants .dish_card {
+.restaurants .dish .card {
   position: relative;
   width: 100%;
   background: white;
@@ -203,7 +197,7 @@ input {
   margin-bottom: 20px;
 }
 @media (min-width: 1024px) {
-  .restaurants .dish_card {
+  .restaurants .dish .card {
     flex: 33%;
   }
 }

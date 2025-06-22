@@ -62,18 +62,10 @@
  .steps {
   font-family: $fontFamily;
   padding: 32px 22px;
-  display: flex;
-  flex-direction: column;
 
   
 
-  h2 {
-    display: flex;
-    justify-content: space-around;
-    width: 48%;
-    font-size: 24px;
-    margin-bottom: 8px;
-  }
+  
   &_number {
     position: relative;
     right: 30px;
@@ -95,15 +87,18 @@
     display: flex;
     gap: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  &_dekstop {
     @include respond(desktop) {
-      gap: 45px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+      width: 33%;
   }
+  }
+  .steps-desktop {
+    @include respond(desktop) {
+      gap: 20px;
+      display: flex;
+    
+  }
+
+}
 }
 
 
@@ -115,9 +110,9 @@
   
   .dish {
     @include respond(desktop) {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 28px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
       padding-top: 20px;
   }
 
@@ -152,7 +147,7 @@
     display: block;
     border-radius: 15px 15px 0 0;
   }
-  &_card {
+  .card {
     position: relative;
     width: 100%;
     background: white;
