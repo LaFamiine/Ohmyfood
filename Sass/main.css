@@ -45,6 +45,7 @@ footer h5 {
 header {
   text-align: center;
   font-family: "Roboto", sans-serif;
+  display: flex;
 }
 
 .illustration img {
@@ -220,8 +221,28 @@ input {
   font-size: 14px;
 }
 
-.illustration img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
+.restaurant-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 16px 0;
+  background-color: white;
+  font-family: shrikhand, cursive;
+}
+
+.menu-category {
+  padding: 24px 16px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+
+.menu-item .price {
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */
