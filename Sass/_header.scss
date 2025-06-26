@@ -1,10 +1,6 @@
 header {
-  text-align: center;
+  justify-content: center;
   font-family: $fontFamily;
-display: flex;;
+  display: flex;
 }
 
-.illustration img {
-  object-fit: cover;
-width: 100%;
-}
