@@ -48,6 +48,17 @@ header {
   display: flex;
 }
 
+.arrow {
+  display: flex;
+  align-items: center;
+}
+
+.arrow i {
+  font-size: 24px;
+  color: #000;
+  margin-right: 10px;
+}
+
 .header_location {
   display: flex;
   align-items: center;
@@ -221,30 +232,41 @@ input {
   font-size: 14px;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6f6f6;
+}
+
 img {
   width: 100%;
   height: auto;
 }
 
 .restaurant-title {
+  width: 93%;
+  position: relative;
+  bottom: 85px;
   align-items: center;
   justify-content: space-between;
   padding: 24px 16px 0;
   background: #f6f6f6;
   font-family: "Roboto", sans-serif;
-  border-radius: 15px;
+  border-radius: 40px;
 }
 
 h2 {
-  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 28px;
   margin: 0;
   font-family: "Shrikhand", cursive;
 }
 
 .menu-category {
-  padding: 24px 16px;
+  padding: 24px 24px 0px 0px;
   font-size: 14px;
-  margin-bottom: 12px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -306,5 +328,6 @@ h4 {
 .order {
   display: flex;
   justify-content: center;
-  margin: 20px 0 20px;
+  position: relative;
+  top: 25px;
 }/*# sourceMappingURL=main.css.map */
