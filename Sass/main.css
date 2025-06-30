@@ -232,6 +232,13 @@ img {
   width: 100%;
   height: auto;
 }
+@media (min-width: 1024px) {
+  img {
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 
 .restaurant-title {
   width: 93%;
@@ -330,6 +337,20 @@ header {
   justify-content: flex-start;
   font-family: "Roboto", sans-serif;
   display: flex;
+}
+
+@media (min-width: 1024px) {
+  header img {
+    width: 100px;
+    height: 380px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+.arrow img {
+  width: 100%;
+  height: auto;
 }
 
 .arrow {
