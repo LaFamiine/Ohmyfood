@@ -23,7 +23,6 @@ input {
   align-items: center;
   text-align: center;
   font-family: $fontFamily;
-  background: $gray3;
   padding-bottom: 30px;
 
   &_button {
@@ -84,9 +83,7 @@ input {
     display: flex;
     gap: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    @include respond(desktop) {
-      width: 33%;
-    }
+    cursor: pointer;
   }
 
 

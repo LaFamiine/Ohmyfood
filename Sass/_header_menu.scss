@@ -1,16 +1,10 @@
-header {
+.header-menu {
   justify-content: flex-start;
   font-family: $fontFamily;
   display: flex;
 }
 
-header img   {
-   @include respond(desktop) {
-  width: 100px;
-  height: 380px;
-  object-fit: cover;
-}
-}
+
 
 .arrow img {
   width: 100%;
