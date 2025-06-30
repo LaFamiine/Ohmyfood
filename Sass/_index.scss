@@ -89,12 +89,7 @@ input {
     }
   }
 
-  .main-content {
-    @include respond(desktop) {
-      max-width: 1400px;
-      margin: 0 auto;
-    }
-  }
+
   .steps-desktop {
     @include respond(desktop) {
       gap: 20px;
@@ -104,6 +99,8 @@ input {
 }
 
 .restaurants {
+   max-width: 1400px;
+      margin: 0 auto;
   width: 100%;
   padding: 33px 0px;
   background-color: #f6f6f6;
