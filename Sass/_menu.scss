@@ -32,6 +32,9 @@ h2 {
   font-size: 28px;
   margin: 0;
    font-family: $fontFamily2;
+   @include respond(desktop) {
+    justify-content: center;
+}
 }
 .menu-category {
   padding: 24px 24px 0px 0px;
