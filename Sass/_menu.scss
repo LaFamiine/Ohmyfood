@@ -27,6 +27,7 @@ h2 {
    font-family: $fontFamily2;
    @include respond(desktop) {
     justify-content: center;
+    gap: 20px;
 }
 }
 .menu-category {

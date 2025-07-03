@@ -54,18 +54,6 @@ header a {
   top: 25px;
 }
 
-.header_location {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 10px;
-  background-color: rgb(234, 234, 234);
-  width: 100%;
-  height: 50px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
 input {
   border: none;
   background: transparent;
@@ -251,6 +239,7 @@ h2 {
 @media (min-width: 1024px) {
   h2 {
     justify-content: center;
+    gap: 20px;
   }
 }
 
