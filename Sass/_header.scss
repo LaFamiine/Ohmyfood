@@ -1,6 +1,11 @@
 header {
-  justify-content: center;
+  padding: 10px;
   font-family: $fontFamily;
-  display: flex;
+  .logo{
+    text-align: center;
+  }
+  a{
+    position: absolute;
+    top: 25px;
+  }
 }
-

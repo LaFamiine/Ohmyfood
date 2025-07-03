@@ -1,25 +1,18 @@
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #f6f6f6;
-}
 
 .main-menu img {
   width: 100%;
   height: auto;
    @include respond(desktop) {
-    height: 600px;
+    height: 383px;
     object-fit: cover;
 } 
 }
 
 .restaurant-title {
-  width: 93%;
+  max-width: 1055px;
+  margin: 0 auto;
   position: relative;
-  bottom: 85px;
-  align-items: center;
-  justify-content: space-between;
+  bottom: 55px;
   padding: 24px 16px 0;
   background: #f6f6f6;
  font-family: $fontFamily;
@@ -37,6 +30,8 @@ h2 {
 }
 }
 .menu-category {
+  max-width: 634px;
+  margin: 0 auto;
   padding: 24px 24px 0px 0px;
   font-size: 14px;
   font-family: $fontFamily;
