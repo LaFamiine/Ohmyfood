@@ -1,9 +1,9 @@
 header {
   padding: 10px;
   font-family: $fontFamily;
-  .logo{
-    text-align: center;
-  }
+  display: flex;
+  justify-content: center;
+  
   a{
     position: absolute;
     top: 25px;
