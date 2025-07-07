@@ -26,8 +26,7 @@ h2 {
   margin: 0;
    font-family: $fontFamily2;
    @include respond(desktop) {
-   max-width: 1400px;
-        margin: 0 auto;
+   justify-content: center;
 }
 }
 .menu-category {
@@ -45,6 +44,9 @@ h2 {
     margin-bottom: 10px;
 }
 
+article:hover {
+  transform: scale(1.05);
+}
 
 h3 {
   font-size: 24px;

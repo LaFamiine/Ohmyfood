@@ -1,11 +1,11 @@
 header {
   padding: 10px;
   font-family: $fontFamily;
-  display: flex;
-  justify-content: center;
+ text-align: center;
   
   a{
     position: absolute;
     top: 25px;
+    left: 25px;
   }
 }
