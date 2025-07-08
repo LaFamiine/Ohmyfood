@@ -54,10 +54,6 @@ input {
     text-decoration: none;
   }
 }
-
-article:hover {
-  transform: scale(1.05);
-}
 .steps {
   font-family: $fontFamily;
   padding: 32px 22px;
@@ -88,9 +84,6 @@ article:hover {
     cursor: pointer;
   }
 
-li:hover {
-    transform: scale(1.05);
-  }
 
   .steps-desktop {
     @include respond(desktop) {

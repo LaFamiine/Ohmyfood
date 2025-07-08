@@ -106,10 +106,6 @@ input {
   text-decoration: none;
 }
 
-article:hover {
-  transform: scale(1.05);
-}
-
 .steps {
   font-family: "Roboto", sans-serif;
   padding: 32px 22px;
@@ -137,9 +133,6 @@ article:hover {
   gap: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-}
-.steps li:hover {
-  transform: scale(1.05);
 }
 @media (min-width: 1024px) {
   .steps .steps-desktop {
@@ -277,10 +270,6 @@ h2 {
   border-bottom: 2px solid rgb(153, 226, 208);
   padding-bottom: 10px;
   margin-bottom: 10px;
-}
-
-article:hover {
-  transform: scale(1.05);
 }
 
 h3 {
