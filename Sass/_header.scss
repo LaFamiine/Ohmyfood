@@ -1,11 +1,81 @@
+.main-content {
+  opacity: 0;
+  animation: show 0s forwards;
+  animation-delay: 3s; /* après la fin de la barre */
+}
+
+@keyframes show {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Loader plein écran */
+.loader-container {
+  position: fixed;
+  inset: 0;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: hide 0s forwards;
+  animation-delay: 3s;
+}
+
+/* Cache le loader */
+@keyframes hide {
+  to {
+    display: none;
+    visibility: hidden;
+  }
+}
+
 header {
   padding: 10px;
   font-family: $fontFamily;
- text-align: center;
-  
-  a{
+  text-align: center;
+ 
+
+  a {
     position: absolute;
     top: 25px;
     left: 25px;
   }
 }
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.progress-bar {
+  width: 300px;
+  height: 10px;
+  background-color: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  width: 0%;
+  background-color: #9356dc;
+  animation-name: fill;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fill {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
