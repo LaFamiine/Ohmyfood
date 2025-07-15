@@ -29,12 +29,24 @@ h2 {
    justify-content: center;
 }
 }
+
+
 .menu-category {
   max-width: 634px;
   margin: 0 auto;
   padding: 24px 24px 0px 0px;
   font-size: 14px;
   font-family: $fontFamily;
+ 
+
+  @keyframes apear{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
 
   .entrees{
     animation-name: apear;
@@ -76,6 +88,8 @@ h4 {
   font-family: $fontFamily;
 }
 
+  
+
 .menu-item {
   display: flex;
   width: 100%;
@@ -87,13 +101,23 @@ h4 {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   margin-bottom: 20px;
   border-radius: 15px;
+  cursor: pointer;
 }
 
+.menu-item::before {
+  content: "check";
+  position: absolute;
+  inset: 1;
+  background-color: #99e2d0;
+  transform: scaleX(0);
+  transform-origin: right; 
+  transition: transform 0.4s ease-out;
+  z-index: 0;
+  border-radius: 15px;
+}
 
-.menu-item-content p {
-  font-size: 14px;
-  font-family: $fontFamily;
-  
+.menu-item:hover::before {
+  transform: scaleX(1); 
 }
 
 .menu-item .price {

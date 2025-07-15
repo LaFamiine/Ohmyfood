@@ -23,7 +23,7 @@ input {
   background-color: #f6f6f6;
 
   &_button {
-    width: 50%;
+    
     background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
     padding: 16px 32px;
     border: none;
@@ -96,6 +96,7 @@ input {
 }
 
 
+
 .restaurants {
         margin: 0 auto;
   width: 100%;
@@ -130,6 +131,11 @@ input {
     .fa-solid {
       padding-right: 20px;
       color: #9356dc;
+
+      .fa-solid:hover:before {
+        color: #ff79da;
+        transform: scaleX(1);
+      }
     }
 
     p {

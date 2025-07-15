@@ -1,7 +1,7 @@
 .main-content {
   opacity: 0;
   animation: show 0s forwards;
-  animation-delay: 3s; /* après la fin de la barre */
+  animation-delay: 3s; 
 }
 
 @keyframes show {
@@ -10,7 +10,7 @@
   }
 }
 
-/* Loader plein écran */
+
 .loader-container {
   position: fixed;
   inset: 0;
@@ -23,7 +23,6 @@
   animation-delay: 3s;
 }
 
-/* Cache le loader */
 @keyframes hide {
   to {
     display: none;
