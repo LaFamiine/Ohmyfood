@@ -17,6 +17,8 @@
   background: #f6f6f6;
  font-family: $fontFamily;
  border-radius: 40px;
+
+ 
 }
 
 h2 {
@@ -37,22 +39,20 @@ h2 {
   padding: 24px 24px 0px 0px;
   font-size: 14px;
   font-family: $fontFamily;
- 
-
-  @keyframes apear{
-  0%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
 }
 
-  .entrees{
+
+.menu-category-title {
+  display: ruby-text;
+  border-bottom: 2px solid rgb(153, 226, 208);
+   padding-bottom: 10px;
+    margin-bottom: 10px;
+
+    .entrees{
     animation-name: apear;
     animation-duration: 1s;
     animation-delay: 1s;
-    animation-fill-mode: both; // bloquer l'action à 100%
+    animation-fill-mode: both;
   }
   .plats{
     animation-name: apear;
@@ -66,13 +66,6 @@ h2 {
     animation-delay: 3s;
     animation-fill-mode: both;
   }
-}
-
-.menu-category-title {
-  display: ruby-text;
-  border-bottom: 2px solid rgb(153, 226, 208);
-   padding-bottom: 10px;
-    margin-bottom: 10px;
 }
 
 h3 {
@@ -147,4 +140,15 @@ h4 {
   justify-content: center;
   position: relative;
     top: 25px;
+}
+
+/* Keyframes */
+
+@keyframes apear{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
