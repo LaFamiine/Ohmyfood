@@ -84,6 +84,8 @@ h4 {
   
 
 .menu-item {
+position: relative;
+  overflow: hidden;
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -95,29 +97,39 @@ h4 {
   margin-bottom: 20px;
   border-radius: 15px;
   cursor: pointer;
-}
 
-.menu-item::before {
-  content: "check";
-  position: absolute;
-  inset: 1;
-  background-color: #99e2d0;
-  transform: scaleX(0);
-  transform-origin: right; 
-  transition: transform 0.4s ease-out;
-  z-index: 0;
-  border-radius: 15px;
-}
-
-.menu-item:hover::before {
-  transform: scaleX(1); 
-}
-
-.menu-item .price {
+  .price {
   position: relative;
     bottom: 15px;
   font-weight: bold;
+  right: 0;
+    transition: right 1s ease;
 }
+
+  .check{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: -45px;
+    background-color: #99e2d0;
+    color: #fff;
+    height: 100%;
+    width: 45px;
+    transition: right 1s ease;
+  }
+ &:hover{
+    .check{
+      right: 0;
+    }
+    .price{
+      right: 45px;
+    }
+} 
+}
+
+
+
 
 .order-btn {
   width: 50%;

@@ -330,38 +330,30 @@ h2 {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
 }
-@keyframes apear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.menu-category .entrees {
-  animation-name: apear;
-  animation-duration: 1s;
-  animation-delay: 1s;
-  animation-fill-mode: both;
-}
-.menu-category .plats {
-  animation-name: apear;
-  animation-duration: 1s;
-  animation-delay: 2s;
-  animation-fill-mode: both;
-}
-.menu-category .desserts {
-  animation-name: apear;
-  animation-duration: 1s;
-  animation-delay: 3s;
-  animation-fill-mode: both;
-}
 
 .menu-category-title {
   display: ruby-text;
   border-bottom: 2px solid rgb(153, 226, 208);
   padding-bottom: 10px;
   margin-bottom: 10px;
+}
+.menu-category-title .entrees {
+  animation-name: apear;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+.menu-category-title .plats {
+  animation-name: apear;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+}
+.menu-category-title .desserts {
+  animation-name: apear;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-fill-mode: both;
 }
 
 h3 {
@@ -377,6 +369,8 @@ h4 {
 }
 
 .menu-item {
+  position: relative;
+  overflow: hidden;
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -389,27 +383,30 @@ h4 {
   border-radius: 15px;
   cursor: pointer;
 }
-
-.menu-item::before {
-  content: "check";
-  position: absolute;
-  inset: 1;
-  background-color: #99e2d0;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.4s ease-out;
-  z-index: 0;
-  border-radius: 15px;
-}
-
-.menu-item:hover::before {
-  transform: scaleX(1);
-}
-
 .menu-item .price {
   position: relative;
   bottom: 15px;
   font-weight: bold;
+  right: 0;
+  transition: right 1s ease;
+}
+.menu-item .check {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: -45px;
+  background-color: #99e2d0;
+  color: #fff;
+  height: 100%;
+  width: 45px;
+  transition: right 1s ease;
+}
+.menu-item:hover .check {
+  right: 0;
+}
+.menu-item:hover .price {
+  right: 45px;
 }
 
 .order-btn {
@@ -434,4 +431,14 @@ h4 {
   justify-content: center;
   position: relative;
   top: 25px;
+}
+
+/* Keyframes */
+@keyframes apear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=main.css.map */
