@@ -1,11 +1,10 @@
-
 .main-menu img {
   width: 100%;
   height: auto;
-   @include respond(desktop) {
+  @include respond(desktop) {
     height: 383px;
     object-fit: cover;
-} 
+  }
 }
 
 .restaurant-title {
@@ -15,23 +14,20 @@
   bottom: 55px;
   padding: 24px 16px 0;
   background: #f6f6f6;
- font-family: $fontFamily;
- border-radius: 40px;
-
- 
+  font-family: $fontFamily;
+  border-radius: 40px;
 }
 
 h2 {
   display: flex;
-   justify-content: space-between;
+  justify-content: space-between;
   font-size: 28px;
   margin: 0;
-   font-family: $fontFamily2;
-   @include respond(desktop) {
-   justify-content: center;
+  font-family: $fontFamily2;
+  @include respond(desktop) {
+    justify-content: center;
+  }
 }
-}
-
 
 .menu-category {
   max-width: 634px;
@@ -41,28 +37,27 @@ h2 {
   font-family: $fontFamily;
 }
 
-
 .menu-category-title {
   display: ruby-text;
   border-bottom: 2px solid rgb(153, 226, 208);
-   padding-bottom: 10px;
-    margin-bottom: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 
-    .entrees{
+  .entrees {
     animation-name: apear;
     animation-duration: 1s;
     animation-delay: 1s;
     animation-fill-mode: both;
   }
-  .plats{
+  .plats {
     animation-name: apear;
     animation-duration: 1s;
     animation-delay: 2s;
     animation-fill-mode: both;
   }
-  .desserts{
+  .desserts {
     animation-name: apear;
-    animation-duration: 1s; 
+    animation-duration: 1s;
     animation-delay: 3s;
     animation-fill-mode: both;
   }
@@ -71,7 +66,7 @@ h2 {
 h3 {
   font-size: 24px;
   margin: 0;
- 
+
   font-family: $fontFamily;
 }
 
@@ -81,10 +76,8 @@ h4 {
   font-family: $fontFamily;
 }
 
-  
-
 .menu-item {
-position: relative;
+  position: relative;
   overflow: hidden;
   display: flex;
   width: 100%;
@@ -99,14 +92,14 @@ position: relative;
   cursor: pointer;
 
   .price {
-  position: relative;
+    position: relative;
     bottom: 15px;
-  font-weight: bold;
-  right: 0;
+    font-weight: bold;
+    right: 0;
     transition: right 1s ease;
-}
+  }
 
-  .check{
+  .check {
     position: absolute;
     display: flex;
     align-items: center;
@@ -118,49 +111,53 @@ position: relative;
     width: 45px;
     transition: right 1s ease;
   }
- &:hover{
-    .check{
+  &:hover {
+    .check {
       right: 0;
     }
-    .price{
+    .price {
       right: 45px;
     }
-} 
+  }
 }
 
-
-
-
 .order-btn {
-  width: 50%;
-    background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-    padding: 16px 32px;
-    border: none;
-    border-radius: 25px;
-    font-size: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    color: $white;
-    cursor: pointer;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  padding: 16px 32px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  color: $white;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    background: radial-gradient(circle, lighten(rgba(255, 255, 255, 0.15), 5) 0%, darken(rgba(255, 121, 218, 1), 10) 100%);
+    &::after {
+      border-radius: 25px;
+      opacity: 1;
+    }
     @include respond(desktop) {
       width: 25%;
     }
+  }
 }
 
-
-.order{
+.order {
   display: flex;
   justify-content: center;
   position: relative;
-    top: 25px;
+  top: 25px;
 }
 
 /* Keyframes */
 
-@keyframes apear{
-  0%{
+@keyframes apear {
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }

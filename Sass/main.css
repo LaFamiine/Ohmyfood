@@ -127,11 +127,6 @@ input {
   font-size: 16px;
 }
 
-.hero_button:hover {
-  transform: scale(1.05);
-  color: #fff;
-}
-
 .hero {
   display: flex;
   flex-direction: column;
@@ -150,6 +145,15 @@ input {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   color: #fff;
   cursor: pointer;
+}
+.hero_button:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, #ff46cc 100%);
+}
+.hero_button:hover::after {
+  border-radius: 25px;
+  opacity: 1;
 }
 .hero h1 {
   font-size: 24px;
@@ -410,7 +414,6 @@ h4 {
 }
 
 .order-btn {
-  width: 50%;
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   padding: 16px 32px;
   border: none;
@@ -420,8 +423,17 @@ h4 {
   color: #fff;
   cursor: pointer;
 }
+.order-btn:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, #ff46cc 100%);
+}
+.order-btn:hover::after {
+  border-radius: 25px;
+  opacity: 1;
+}
 @media (min-width: 1024px) {
-  .order-btn {
+  .order-btn:hover {
     width: 25%;
   }
 }
