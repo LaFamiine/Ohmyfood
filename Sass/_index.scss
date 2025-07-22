@@ -143,6 +143,15 @@ input {
         transform: scaleX(1);
       }
     }
+    
+ .fa-heart{
+transition-property: all;
+animation-fill-mode: both;
+}
+.fa-heart:hover{
+  opacity: 1;
+  color: #9747ff;
+}
 
     p {
       display: flex;
