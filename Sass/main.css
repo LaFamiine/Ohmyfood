@@ -149,7 +149,7 @@ input {
 .hero_button:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, #ff46cc 100%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, rgb(255, 70, 203.9179104478) 100%);
 }
 .hero_button:hover::after {
   border-radius: 25px;
@@ -390,12 +390,6 @@ h4 {
   font-family: "Roboto", sans-serif;
 }
 
-.points:hover {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .menu-item {
   position: relative;
   overflow: hidden;
@@ -436,6 +430,14 @@ h4 {
 .menu-item:hover .price {
   right: 45px;
 }
+.menu-item:hover .content {
+  width: 75%;
+}
+.menu-item:hover h4, .menu-item:hover p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 
 .order-btn {
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
@@ -448,18 +450,11 @@ h4 {
   cursor: pointer;
 }
 .order-btn:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, #ff46cc 100%);
 }
 .order-btn:hover::after {
   border-radius: 25px;
   opacity: 1;
-}
-@media (min-width: 1024px) {
-  .order-btn:hover {
-    width: 25%;
-  }
 }
 
 .order {

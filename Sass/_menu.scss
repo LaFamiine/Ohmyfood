@@ -86,13 +86,6 @@ h4 {
   font-family: $fontFamily;
 }
 
-.points:hover {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  
-}
-
 .menu-item {
   position: relative;
   overflow: hidden;
@@ -135,6 +128,14 @@ h4 {
     .price {
       right: 45px;
     }
+    .content{
+      width: 75%;
+    }
+    h4, p{
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
   }
 }
 
@@ -148,18 +149,13 @@ h4 {
   color: $white;
   cursor: pointer;
   &:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
-    background: radial-gradient(circle, lighten(rgba(255, 255, 255, 0.15), 5) 0%, darken(rgba(255, 121, 218, 1), 10) 100%);
     &::after {
       border-radius: 25px;
       opacity: 1;
     }
-    @include respond(desktop) {
-      width: 25%;
-    }
   }
-}
+  }
 
 .order {
   display: flex;
