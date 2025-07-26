@@ -150,11 +150,12 @@ h4 {
   cursor: pointer;
   &:hover {
     transition: all 0.3s ease;
+    opacity: 0.85;
     &::after {
       border-radius: 25px;
       opacity: 1;
+      }
     }
-  }
   }
 
 .order {

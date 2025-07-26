@@ -147,9 +147,8 @@ input {
   cursor: pointer;
 }
 .hero_button:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, rgb(255, 70, 203.9179104478) 100%);
+  opacity: 0.85;
 }
 .hero_button:hover::after {
   border-radius: 25px;
@@ -451,6 +450,7 @@ h4 {
 }
 .order-btn:hover {
   transition: all 0.3s ease;
+  opacity: 0.85;
 }
 .order-btn:hover::after {
   border-radius: 25px;
