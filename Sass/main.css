@@ -245,14 +245,6 @@ input {
   color: #ff79da;
   transform: scaleX(1);
 }
-.restaurants .dish .fa-heart {
-  transition-property: all;
-  animation-fill-mode: both;
-}
-.restaurants .dish .fa-heart:hover {
-  opacity: 1;
-  color: #9747ff;
-}
 .restaurants .dish p {
   display: flex;
   justify-content: space-between;
