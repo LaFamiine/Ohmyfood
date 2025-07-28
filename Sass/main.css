@@ -119,6 +119,8 @@ header a {
 .search {
   text-align: center;
   background-color: rgb(234, 234, 234);
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 input {
@@ -352,13 +354,39 @@ h2 {
   }
 }
 
-.fa-heart {
+.heart {
+  position: relative;
   transition-property: all;
   animation-fill-mode: both;
+  left: 15px;
+}
+.heart .fa-regular {
+  opacity: 1;
+  left: 15px;
+  color: #9747ff;
+}
+.heart .fa-solid {
+  opacity: 0;
+  left: -13px;
+  color: #9747ff;
+}
+.heart .fa-solid:hover {
+  opacity: 1;
+  left: -13px;
+  color: #9747ff;
 }
 
-.fa-heart:hover {
-  opacity: 1;
+.fa-regular {
+  position: relative;
+  left: 0px;
+  transition: all 0.3s ease;
+  color: #9747ff;
+}
+
+.fa-solid {
+  position: relative;
+  left: 15px;
+  transition: all 0.3s ease;
   color: #9747ff;
 }
 
@@ -432,7 +460,8 @@ h4 {
 .menu-item:hover .content {
   width: 75%;
 }
-.menu-item:hover h4, .menu-item:hover p {
+.menu-item:hover h4,
+.menu-item:hover p {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;

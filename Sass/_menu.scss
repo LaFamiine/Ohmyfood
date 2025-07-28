@@ -48,14 +48,41 @@ h2 {
   }
 }
 
-.fa-heart{
-transition-property: all;
-animation-fill-mode: both;
+.heart {
+  position: relative;
+  transition-property: all;
+  animation-fill-mode: both;
+  left: 15px;
+
+  .fa-regular {
+    opacity: 1;
+    left: 15px;
+    color: #9747ff;
+  }
+  .fa-solid {
+    opacity: 0;
+    left: -13px;
+    color: #9747ff;
+  }
+  .fa-solid:hover {
+    opacity: 1;
+    left: -13px;
+    color: #9747ff;
+  }
 }
-.fa-heart:hover{
-  opacity: 1;
+
+.fa-regular {
+  position: relative;
+  left: 0px;
+  transition: all 0.3s ease;
   color: #9747ff;
-  
+}
+
+.fa-solid {
+  position: relative;
+  left: 15px;
+  transition: all 0.3s ease;
+  color: #9747ff;
 }
 
 .menu-category {
@@ -128,10 +155,11 @@ h4 {
     .price {
       right: 45px;
     }
-    .content{
+    .content {
       width: 75%;
     }
-    h4, p{
+    h4,
+    p {
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
@@ -154,9 +182,9 @@ h4 {
     &::after {
       border-radius: 25px;
       opacity: 1;
-      }
     }
   }
+}
 
 .order {
   display: flex;
