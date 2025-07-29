@@ -52,7 +52,6 @@ h2 {
   position: relative;
   transition-property: all;
   animation-fill-mode: both;
-  left: 15px;
 
   .fa-regular {
     opacity: 1;
@@ -61,26 +60,31 @@ h2 {
   }
   .fa-solid {
     opacity: 0;
-    left: -13px;
+    left: 0px;
     color: #9747ff;
   }
   .fa-solid:hover {
     opacity: 1;
+    color: #9747ff;
+  }
+
+  .fa-icon {
+    position: relative;
     left: -13px;
+    transition: all 0.3s ease;
     color: #9747ff;
   }
 }
 
 .fa-regular {
   position: relative;
-  left: 0px;
   transition: all 0.3s ease;
   color: #9747ff;
 }
 
 .fa-solid {
   position: relative;
-  left: 15px;
+  left: -13px;
   transition: all 0.3s ease;
   color: #9747ff;
 }

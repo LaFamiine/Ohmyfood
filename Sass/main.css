@@ -9,6 +9,7 @@ footer p {
   font-size: 18px;
 }
 footer .fa-xs {
+  color: white;
   margin: 7px;
 }
 footer ul {
@@ -232,18 +233,30 @@ input {
   margin-top: 0px;
   margin-bottom: 10px;
 }
-.restaurants .dish .fa-regular {
+.restaurants .dish .heart {
   padding-right: 20px;
   position: relative;
   top: 15px;
 }
-.restaurants .dish .fa-solid {
-  padding-right: 20px;
+.restaurants .dish .fa-xs {
   color: #9356dc;
 }
-.restaurants .dish .fa-solid .fa-solid:hover:before {
-  color: #ff79da;
-  transform: scaleX(1);
+.restaurants .dish .heart {
+  position: relative;
+  transition-property: all;
+  animation-fill-mode: both;
+}
+.restaurants .dish .heart .fa-regular {
+  opacity: 1;
+  color: #9747ff;
+}
+.restaurants .dish .heart .fa-solid {
+  opacity: 0;
+  color: #9747ff;
+}
+.restaurants .dish .heart .fa-solid:hover {
+  opacity: 1;
+  color: #9747ff;
 }
 .restaurants .dish p {
   display: flex;
@@ -350,7 +363,6 @@ h2 {
   position: relative;
   transition-property: all;
   animation-fill-mode: both;
-  left: 15px;
 }
 .heart .fa-regular {
   opacity: 1;
@@ -359,25 +371,29 @@ h2 {
 }
 .heart .fa-solid {
   opacity: 0;
-  left: -13px;
+  left: 0px;
   color: #9747ff;
 }
 .heart .fa-solid:hover {
   opacity: 1;
+  color: #9747ff;
+}
+.heart .fa-icon {
+  position: relative;
   left: -13px;
+  transition: all 0.3s ease;
   color: #9747ff;
 }
 
 .fa-regular {
   position: relative;
-  left: 0px;
   transition: all 0.3s ease;
   color: #9747ff;
 }
 
 .fa-solid {
   position: relative;
-  left: 15px;
+  left: -13px;
   transition: all 0.3s ease;
   color: #9747ff;
 }

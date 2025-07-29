@@ -129,23 +129,37 @@ input {
       margin-bottom: 10px;
     }
 
-    .fa-regular {
+    .heart {
       padding-right: 20px;
       position: relative;
       top: 15px;
     }
 
-    .fa-solid {
-      padding-right: 20px;
+    .fa-xs {
       color: #9356dc;
 
-      .fa-solid:hover:before {
-        color: #ff79da;
-        transform: scaleX(1);
-      }
+     
+      
     }
     
- 
+ .heart {
+  position: relative;
+  transition-property: all;
+  animation-fill-mode: both;
+
+  .fa-regular {
+    opacity: 1;
+    color: #9747ff;
+  }
+  .fa-solid {
+    opacity: 0;
+    color: #9747ff;
+  }
+  .fa-solid:hover {
+    opacity: 1;
+    color: #9747ff;
+  }
+}
 
     p {
       display: flex;
