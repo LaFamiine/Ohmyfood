@@ -72,7 +72,10 @@ h2 {
   label {
     cursor: pointer;
     position: relative;
+    left: -40px;
+    @include respond(desktop) {
     left: 15px;
+  }
     
     .fa-regular {
       position: absolute;

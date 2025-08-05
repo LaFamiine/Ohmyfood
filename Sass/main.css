@@ -390,7 +390,12 @@ h2 {
 .heart label {
   cursor: pointer;
   position: relative;
-  left: 15px;
+  left: -40px;
+}
+@media (min-width: 1024px) {
+  .heart label {
+    left: 15px;
+  }
 }
 .heart label .fa-regular {
   position: absolute;
