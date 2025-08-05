@@ -48,47 +48,47 @@ h2 {
   }
 }
 
-/* .heart {
+
+.heart {
   position: relative;
-  transition-property: all;
-  animation-fill-mode: both;
-
-  .fa-regular {
-    opacity: 1;
-    left: 15px;
-    color: #9747ff;
+  left: 15px;
+  
+  .heart-checkbox {
+    display: none;
+    
+    &:checked + label {
+      .fa-regular {
+        opacity: 0;
+      }
+      .fa-solid {
+        opacity: 1;
+        color: transparent;
+        background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+        background-clip: text;
+      }
+    }
   }
-  .fa-solid {
-    opacity: 0;
-    left: 0px;
-    color: #9747ff;
-  }
-  .fa-solid:hover {
-    opacity: 1;
-    color: #9747ff;
-  }
-
-  .fa-icon {
+  
+  label {
+    cursor: pointer;
     position: relative;
-    left: -13px;
-    transition: all 0.3s ease;
-    color: #9747ff;
+    left: 15px;
+    
+    .fa-regular {
+      position: absolute;
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+    .fa-solid {
+      position: absolute;
+      opacity: 0;
+      color: transparent;
+      background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+      background-clip: text;
+      transition: opacity 0.3s ease;
+    }
   }
 }
-
-.fa-regular {
-  position: relative;
-  transition: all 0.3s ease;
-  color: #9747ff;
-}
-
-.fa-solid {
-  position: relative;
-  left: -13px;
-  transition: all 0.3s ease;
-  color: #9747ff;
-}
-*/
 .menu-category {
   max-width: 634px;
   margin: 0 auto;

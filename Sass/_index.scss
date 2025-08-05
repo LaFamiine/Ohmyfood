@@ -135,38 +135,43 @@ input {
     }
 
     .heart {
-      padding-right: 20px;
-      position: relative;
-      top: 15px;
+  padding-right: 50px;
+  position: relative;
+  top: 15px;
+  
+  .heart-checkbox {
+    display: none; /* Cache la checkbox */
+    
+    &:checked + .heart-label {
+      .fa-regular {
+        opacity: 0; /* Cache le cœur vide quand coché */
+      }
+      .fa-solid {
+        opacity: 1; /* Montre le cœur plein quand coché */
+        color: transparent;
+        background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+        background-clip: text;
+        -webkit-background-clip: text;
+      }
     }
-
-    .fa-xs {
-      color: #9356dc;
-
-     
-      
+  }
+  
+  .heart-label {
+    cursor: pointer;
+    position: relative;
+    
+    .fa-regular, .fa-solid {
+      transition: opacity 0.3s ease; /* Animation douce */
     }
     
-/*    
-.heart {
-  position: relative;
-  transition-property: all;
-  animation-fill-mode: both;
-
-  .fa-regular {
-    opacity: 1;
-    color: #9747ff;
-  }
-  .fa-solid {
-    opacity: 0;
-    color: #9747ff;
-  }
-  .fa-solid:hover {
-    opacity: 1;
-    color: #9747ff;
+    .fa-solid {
+      position: absolute;
+      left: 0;
+      opacity: 0; /* Cœur plein caché par défaut */
+    }
   }
 }
-*/
+
     p {
       display: flex;
       justify-content: space-between;

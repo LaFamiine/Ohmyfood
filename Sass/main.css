@@ -1,3 +1,4 @@
+@charset "UTF-8";
 footer {
   background-color: rgb(53, 53, 53);
   color: white;
@@ -223,28 +224,6 @@ input {
   background-color: #f6f6f6;
   font-family: "Roboto", sans-serif;
 }
-.restaurants .dish {
-  /*    
-  .heart {
-    position: relative;
-    transition-property: all;
-    animation-fill-mode: both;
-
-    .fa-regular {
-      opacity: 1;
-      color: #9747ff;
-    }
-    .fa-solid {
-      opacity: 0;
-      color: #9747ff;
-    }
-    .fa-solid:hover {
-      opacity: 1;
-      color: #9747ff;
-    }
-  }
-  */
-}
 @media (min-width: 1024px) {
   .restaurants .dish {
     max-width: 1400px;
@@ -261,12 +240,34 @@ input {
   margin-bottom: 10px;
 }
 .restaurants .dish .heart {
-  padding-right: 20px;
+  padding-right: 50px;
   position: relative;
   top: 15px;
 }
-.restaurants .dish .fa-xs {
-  color: #9356dc;
+.restaurants .dish .heart .heart-checkbox {
+  display: none; /* Cache la checkbox */
+}
+.restaurants .dish .heart .heart-checkbox:checked + .heart-label .fa-regular {
+  opacity: 0; /* Cache le cœur vide quand coché */
+}
+.restaurants .dish .heart .heart-checkbox:checked + .heart-label .fa-solid {
+  opacity: 1; /* Montre le cœur plein quand coché */
+  color: transparent;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.restaurants .dish .heart .heart-label {
+  cursor: pointer;
+  position: relative;
+}
+.restaurants .dish .heart .heart-label .fa-regular, .restaurants .dish .heart .heart-label .fa-solid {
+  transition: opacity 0.3s ease; /* Animation douce */
+}
+.restaurants .dish .heart .heart-label .fa-solid {
+  position: absolute;
+  left: 0;
+  opacity: 0; /* Cœur plein caché par défaut */
 }
 .restaurants .dish p {
   display: flex;
@@ -369,47 +370,43 @@ h2 {
   }
 }
 
-/* .heart {
+.heart {
   position: relative;
-  transition-property: all;
-  animation-fill-mode: both;
-
-  .fa-regular {
-    opacity: 1;
-    left: 15px;
-    color: #9747ff;
-  }
-  .fa-solid {
-    opacity: 0;
-    left: 0px;
-    color: #9747ff;
-  }
-  .fa-solid:hover {
-    opacity: 1;
-    color: #9747ff;
-  }
-
-  .fa-icon {
-    position: relative;
-    left: -13px;
-    transition: all 0.3s ease;
-    color: #9747ff;
-  }
+  left: 15px;
+}
+.heart .heart-checkbox {
+  display: none;
+}
+.heart .heart-checkbox:checked + label .fa-regular {
+  opacity: 0;
+}
+.heart .heart-checkbox:checked + label .fa-solid {
+  opacity: 1;
+  color: transparent;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+.heart label {
+  cursor: pointer;
+  position: relative;
+  left: 15px;
+}
+.heart label .fa-regular {
+  position: absolute;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.heart label .fa-solid {
+  position: absolute;
+  opacity: 0;
+  color: transparent;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  transition: opacity 0.3s ease;
 }
 
-.fa-regular {
-  position: relative;
-  transition: all 0.3s ease;
-  color: #9747ff;
-}
-
-.fa-solid {
-  position: relative;
-  left: -13px;
-  transition: all 0.3s ease;
-  color: #9747ff;
-}
-*/
 .menu-category {
   max-width: 634px;
   margin: 0 auto;
