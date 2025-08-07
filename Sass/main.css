@@ -523,12 +523,4 @@ h4 {
   100% {
     opacity: 1;
   }
-}
-@keyframes disapear {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
 }/*# sourceMappingURL=main.css.map */

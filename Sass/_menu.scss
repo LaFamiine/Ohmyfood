@@ -48,7 +48,6 @@ h2 {
   }
 }
 
-
 .heart {
   position: relative;
   left: 15px;
@@ -74,8 +73,8 @@ h2 {
     position: relative;
     left: -40px;
     @include respond(desktop) {
-    left: 15px;
-  }
+      left: 15px;
+    }
     
     .fa-regular {
       position: absolute;
@@ -92,6 +91,7 @@ h2 {
     }
   }
 }
+
 .menu-category {
   max-width: 634px;
   margin: 0 auto;
@@ -110,7 +110,6 @@ h2 {
 h3 {
   font-size: 24px;
   margin: 0;
-
   font-family: $fontFamily;
 }
 
@@ -208,14 +207,5 @@ h4 {
   }
   100% {
     opacity: 1;
-  }
-}
-
-@keyframes disapear {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }
