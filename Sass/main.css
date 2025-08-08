@@ -228,8 +228,8 @@ input {
   .restaurants .dish {
     max-width: 1400px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     grid-gap: 20px;
     padding-top: 20px;
   }
@@ -240,6 +240,7 @@ input {
   margin-bottom: 10px;
 }
 .restaurants .dish .heart {
+  font-size: 18px;
   padding-right: 50px;
   position: relative;
   top: 15px;
@@ -261,7 +262,7 @@ input {
   cursor: pointer;
   position: relative;
 }
-.restaurants .dish .heart .heart-label .fa-regular, .restaurants .dish .heart .heart-label .fa-solid {
+.restaurants .dish .heart .heart-label .fa-regular .fa-solid {
   transition: opacity 0.3s ease; /* Animation douce */
 }
 .restaurants .dish .heart .heart-label .fa-solid {

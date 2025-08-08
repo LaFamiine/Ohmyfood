@@ -14,7 +14,7 @@
   bottom: 55px;
   padding: 24px 16px 0;
   background: #f6f6f6;
-  font-family: $fontFamily;
+  font-family: $font-Family;
   border-radius: 40px;
 
   .entrees {
@@ -97,7 +97,7 @@ h2 {
   margin: 0 auto;
   padding: 24px 24px 0px 0px;
   font-size: 14px;
-  font-family: $fontFamily;
+  font-family: $font-Family;
 }
 
 .menu-category-title {
@@ -110,13 +110,13 @@ h2 {
 h3 {
   font-size: 24px;
   margin: 0;
-  font-family: $fontFamily;
+  font-family: $font-Family;
 }
 
 h4 {
   font-size: 18px;
   margin: 5px;
-  font-family: $fontFamily;
+  font-family: $font-Family;
 }
 
 .menu-item {
@@ -128,7 +128,7 @@ h4 {
   align-items: end;
   padding: 10px 10px 0px 10px;
   background-color: rgba(255, 255, 255, 1);
-  font-family: $fontFamily;
+  font-family: $font-Family;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   margin-bottom: 20px;
   border-radius: 15px;

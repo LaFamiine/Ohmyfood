@@ -3,12 +3,12 @@ a {
   color: inherit;
 }
 
-.search{
-    text-align: center;
-    background-color: rgba(234, 234, 234, 1);
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
+.search {
+  text-align: center;
+  background-color: rgba(234, 234, 234, 1);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
 input {
   border: none;
@@ -21,12 +21,11 @@ input {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  font-family: $fontFamily;
+  font-family: $font-Family;
   padding-bottom: 30px;
   background-color: #f6f6f6;
 
   &_button {
-    
     background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
     padding: 16px 32px;
     border: none;
@@ -37,13 +36,13 @@ input {
     cursor: pointer;
 
     &:hover {
-    transition: all 0.3s ease;
-    opacity: 0.85;
-    &::after {
-      border-radius: 25px;
-      opacity: 1;
+      transition: all 0.3s ease;
+      opacity: 0.85;
+      &::after {
+        border-radius: 25px;
+        opacity: 1;
+      }
     }
-  }
   }
 
   h1 {
@@ -67,10 +66,10 @@ input {
   }
 }
 .steps {
-  font-family: $fontFamily;
+  font-family: $font-Family;
   padding: 32px 22px;
   display: flex;
-    justify-content: center;
+  justify-content: center;
 
   &_number {
     position: relative;
@@ -96,34 +95,30 @@ input {
     cursor: pointer;
   }
 
-
   .steps-desktop {
     @include respond(desktop) {
       max-width: 1024px;
-        margin: 0 auto;
+      margin: 0 auto;
       gap: 20px;
       display: flex;
     }
   }
 }
 
-
-
 .restaurants {
-        margin: 0 auto;
+  margin: 0 auto;
   width: 100%;
   padding: 33px 0px;
   background-color: #f6f6f6;
-  font-family: $fontFamily;
+  font-family: $font-Family;
 
 
-  
   .dish {
     @include respond(desktop) {
-       max-width: 1400px;
+      max-width: 1400px;
       margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      display: flex;
+      flex-wrap: wrap;
       grid-gap: 20px;
       padding-top: 20px;
     }
@@ -135,42 +130,43 @@ input {
     }
 
     .heart {
-  padding-right: 50px;
-  position: relative;
-  top: 15px;
-  
-  .heart-checkbox {
-    display: none; /* Cache la checkbox */
-    
-    &:checked + .heart-label {
-      .fa-regular {
-        opacity: 0; /* Cache le cœur vide quand coché */
+      font-size: 18px;
+      padding-right: 50px;
+      position: relative;
+      top: 15px;
+
+      .heart-checkbox {
+        display: none; /* Cache la checkbox */
+
+        &:checked + .heart-label {
+          .fa-regular {
+            opacity: 0; /* Cache le cœur vide quand coché */
+          }
+          .fa-solid {
+            opacity: 1; /* Montre le cœur plein quand coché */
+            color: transparent;
+            background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+            background-clip: text;
+            -webkit-background-clip: text;
+          }
+        }
       }
-      .fa-solid {
-        opacity: 1; /* Montre le cœur plein quand coché */
-        color: transparent;
-        background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
-        background-clip: text;
-        -webkit-background-clip: text;
+
+      .heart-label {
+        cursor: pointer;
+        position: relative;
+
+        .fa-regular .fa-solid {
+          transition: opacity 0.3s ease; 
+        }
+
+        .fa-solid {
+          position: absolute;
+          left: 0;
+          opacity: 0; /* Cœur plein caché par défaut */
+        }
       }
     }
-  }
-  
-  .heart-label {
-    cursor: pointer;
-    position: relative;
-    
-    .fa-regular, .fa-solid {
-      transition: opacity 0.3s ease; /* Animation douce */
-    }
-    
-    .fa-solid {
-      position: absolute;
-      left: 0;
-      opacity: 0; /* Cœur plein caché par défaut */
-    }
-  }
-}
 
     p {
       display: flex;
@@ -199,8 +195,6 @@ input {
       }
     }
 
-
-    
     .content {
       display: flex;
       justify-content: space-between;
