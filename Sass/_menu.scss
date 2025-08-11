@@ -41,7 +41,6 @@ h2 {
   justify-content: space-between;
   font-size: 28px;
   margin: 0;
-  font-family: $fontFamily2;
   @include respond(desktop) {
     justify-content: center;
   }
@@ -163,14 +162,19 @@ h4 {
     .content {
       width: 75%;
     }
-    h4,
-    p {
+    h4, + p {
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
     }
   }
 }
+
+h4, + p {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
 
 .order-btn {
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
