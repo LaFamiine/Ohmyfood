@@ -1,8 +1,10 @@
+@use './mixins' as *;
+
 footer {
-  background-color: $gray;
+  background-color: rgba(53, 53, 53, 1);
   color: white;
   padding: 22px 25px 22px 25px;
-  font-family: $fontFamily;
+  font-family: 'Roboto', sans-serif;
 
 
 
@@ -16,18 +18,19 @@ footer {
     margin: 7px;
   }
 
-  ul {
-    list-style-type: none;
-    padding-left: 0;
 
-    @include respond(desktop) {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      gap: 25px;
-    }
 
+ul {
+  list-style-type: none;
+  padding-left: 0;
+
+  @include respond(desktop) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
   }
+}
 
   li {
     margin: 5px;
