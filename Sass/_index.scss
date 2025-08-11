@@ -21,6 +21,12 @@ input {
   background: transparent;
   font-size: 16px;
 }
+.section-title H2 {
+  font-size: 24px;
+    margin-bottom: 8px;
+    max-width: 1400px;
+        margin: 0 auto;
+}
 
 .hero {
   display: flex;
@@ -53,12 +59,6 @@ input {
 
   h1 {
     font-size: 24px;
-  }
-
-  h2 {
-    font-family: "Roboto", sans-serif;
-    font-size: 24px;
-    margin-bottom: 8px;
   }
 
   p {
@@ -112,6 +112,14 @@ input {
   }
 }
 
+ H2 {
+  display: flex;
+  justify-content: center;
+  @include respond(desktop) {
+    display: unset;
+  }
+}
+
 .restaurants {
   margin: 0 auto;
   width: 100%;
@@ -128,6 +136,7 @@ input {
       flex-wrap: wrap;
       grid-gap: 20px;
       padding-top: 20px;
+
     }
 
     h3 {
