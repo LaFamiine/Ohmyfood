@@ -1,3 +1,7 @@
+body {
+  margin: auto;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -50,6 +54,7 @@ input {
   }
 
   h2 {
+    font-family: "Roboto", sans-serif;
     font-size: 24px;
     margin-bottom: 8px;
   }

@@ -1,6 +1,6 @@
-@import 'mixins';
-@import 'variables';
-@import 'footer';
-@import 'header';
-@import 'index';
-@import 'menu';
+@use './variables' as *;
+@use './mixins' as mix;
+@use './header';
+@use './footer';
+@use './index';
+@use './menu';
